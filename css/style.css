@@ -107,7 +107,7 @@ footer {
   background-color: #1ebe5d;
 }
 
-@media(max-width: 760px){
+@media(max-width: 768px){
 image-grid{
   flex-direction: column/*Stack images on mobile*/}
   nav a {
