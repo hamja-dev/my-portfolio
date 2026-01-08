@@ -2,13 +2,13 @@
    General layout
 ========================= */
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
   background-color: #f4f4f4;
   margin: 20px;
   padding: 10px;
 }
 
-/* Spacing and padding for main semantic tags */
+/* Add spacing and padding for all main semantic tags */
 header, nav, main, section, footer {
   margin-bottom: 20px;
   padding: 10px;
@@ -56,17 +56,17 @@ section {
 
 /* Images inside sections */
 section img {
-  display: block;
-  max-width: 100%;
-  margin: 10px 0;
-  border-radius: 6px;
-  box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+  display: block;       /* block-level makes spacing reliable */
+  max-width: 100%;      /* responsive */
+  margin: 10px 0;       /* vertical spacing above & below */
+  border-radius: 6px;   /* optional rounded corners */
+   box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
 }
 
 /* Links inside sections */
 section a {
-  display: inline-block;
-  margin: 5px 0;
+  display: inline-block; /* allows margin to work properly */
+  margin: 5px 0;         /* vertical spacing for links */
 }
 
 /* Paragraphs inside sections */
@@ -78,7 +78,7 @@ section p {
 /* Lists inside sections */
 section ul {
   margin: 10px 0;
-  padding-left: 20px;
+  padding-left: 20px; /* indent list items */
 }
 
 /* =========================
@@ -91,10 +91,7 @@ footer {
   padding-top: 10px;
   border-top: 1px solid #ccc;
 }
-
-/* =========================
-   WhatsApp button
-========================= */
+/* WhatsApp button */
 .whatsapp-btn {
   display: inline-block;
   margin-top: 10px;
@@ -109,31 +106,25 @@ footer {
 .whatsapp-btn:hover {
   background-color: #1ebe5d;
 }
-
-/* =========================
-   Portfolio Image Grid
-========================= */
+/* Portfolio Image Grid */
 .image-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 15px;          /* spacing between images */
 }
 
 .image-grid img {
-  flex: 1 1 30%;
-  max-width: 100%;
+  flex: 1 1 30%;      /* each image ~30% of row */
+  max-width: 100%;    /* responsive */
   border-radius: 6px;
   box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
 }
-
-/* =========================
-   Mobile responsiveness
-========================= */
+/* Mobile responsiveness */
 @media (max-width: 768px) {
   .image-grid {
-    flex-direction: column;
+    flex-direction: column;  /* stack images on small screens */
   }
-
+  
   nav a {
     display: block;
     margin-bottom: 10px;
