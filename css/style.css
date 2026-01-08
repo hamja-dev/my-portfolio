@@ -146,3 +146,47 @@ footer {
     gap: 10px;
   }
 }
+/*==========================
+  Typhography
+  ========================*/
+
+  /*Base text */
+  body{
+    line-height: 1.6;
+  }
+
+  /*Main headings*/
+  h1{
+    font-size: 2.2rem;
+  }
+
+  h2{
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+
+  h3{
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+  }
+
+  /*Section spacing*/
+  section{
+    margin-bottom: 30px;
+  }
+
+  /*Center main content*/
+  main{
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  /*Navigation alingment*/
+  nav{
+    text-align: center;
+  }
+
+  /*Footer spacing*/
+  footer{
+    margin-top: 40px;
+  }
