@@ -1,25 +1,38 @@
 /* =========================
-   General layout
+   Global Reset & Base
 ========================= */
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
-  margin: 20px;
-  padding: 10px;
-}
-
-/* Add spacing and padding for all main semantic tags */
-header, nav, main, section, footer {
-  margin-bottom: 20px;
-  padding: 10px;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
 }
 
 /* =========================
-   Header styling
+   Layout Container
 ========================= */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* =========================
+   Header
+========================= */
+header {
+  text-align: center;
+  padding: 30px 20px;
+}
+
 header h1 {
   color: rgb(32, 187, 127);
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 header p {
@@ -28,16 +41,21 @@ header p {
 }
 
 /* =========================
-   Navigation styling
+   Navigation
 ========================= */
 nav {
-  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 15px 0;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
 }
 
 nav a {
-  margin-right: 15px;
   color: darkred;
   text-decoration: none;
+  font-weight: bold;
 }
 
 nav a:hover {
@@ -45,88 +63,86 @@ nav a:hover {
 }
 
 /* =========================
-   Section styling
+   Sections
 ========================= */
 section {
   background-color: #b6ebec;
-  padding: 15px;
-  border-radius: 6px;
+  padding: 25px;
+  margin-bottom: 30px;
+  border-radius: 8px;
   box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
 }
 
-/* Images inside sections */
-section img {
-  display: block;       /* block-level makes spacing reliable */
-  max-width: 100%;      /* responsive */
-  margin: 10px 0;       /* vertical spacing above & below */
-  border-radius: 6px;   /* optional rounded corners */
-   box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
-}
-
-/* Links inside sections */
-section a {
-  display: inline-block; /* allows margin to work properly */
-  margin: 5px 0;         /* vertical spacing for links */
-}
-
-/* Paragraphs inside sections */
 section p {
   color: #333;
-  margin: 5px 0;
+  margin: 8px 0;
 }
 
-/* Lists inside sections */
 section ul {
   margin: 10px 0;
-  padding-left: 20px; /* indent list items */
+  padding-left: 20px;
 }
 
 /* =========================
-   Footer styling
+   Images
 ========================= */
-footer {
-  text-align: center;
-  font-size: 0.9em;
-  color: #555;
-  padding-top: 10px;
-  border-top: 1px solid #ccc;
+section img {
+  display: block;
+  max-width: 100%;
+  margin: 15px 0;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
 }
-/* WhatsApp button */
+
+/* =========================
+   Portfolio Image Grid
+========================= */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.image-grid img {
+  width: 100%;
+}
+
+/* =========================
+   WhatsApp Button
+========================= */
 .whatsapp-btn {
   display: inline-block;
-  margin-top: 10px;
-  padding: 10px 15px;
+  margin-top: 15px;
+  padding: 12px 18px;
   background-color: #25D366;
   color: white;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 6px;
   font-weight: bold;
 }
 
 .whatsapp-btn:hover {
   background-color: #1ebe5d;
 }
-/* Portfolio Image Grid */
-.image-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;          /* spacing between images */
+
+/* =========================
+   Footer
+========================= */
+footer {
+  text-align: center;
+  font-size: 0.9em;
+  color: #555;
+  padding: 20px;
+  border-top: 1px solid #ccc;
+  background-color: #ffffff;
 }
 
-.image-grid img {
-  flex: 1 1 30%;      /* each image ~30% of row */
-  max-width: 100%;    /* responsive */
-  border-radius: 6px;
-  box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
-}
-/* Mobile responsiveness */
+/* =========================
+   Mobile Navigation
+========================= */
 @media (max-width: 768px) {
-  .image-grid {
-    flex-direction: column;  /* stack images on small screens */
-  }
-  
-  nav a {
-    display: block;
-    margin-bottom: 10px;
+  nav {
+    flex-direction: column;
+    gap: 10px;
   }
 }
