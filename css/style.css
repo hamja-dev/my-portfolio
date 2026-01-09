@@ -2,14 +2,23 @@
    Global styles
 ========================= */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f5f7fa;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: #f6f7f9;
   margin: 0;
-  padding: 0;
-  color: #2c2c2c;
-  p,li{
-    line-height: 1.6;
-  }
+  padding: 40px 20px;
+  line-height: 1.6;
+}
+/*Global headings*/
+h1,h2,h3 {
+  color: #222;
+  margin-bottom: 10px;
+  font: weight 600;
+}
+
+/*Centered container*/
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 /* Center the site content */
