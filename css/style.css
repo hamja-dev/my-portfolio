@@ -31,33 +31,48 @@ header, nav, main, footer {
 /* =========================
    Header
 ========================= */
+header {
+  text-align: center;/*center content*/
+  padding: 40px 20px;
+  background-color: #1f3a5f;/*deep blue header bacground*/
+  color: white;
+  border-radius: 8px;
+}
+
 header h1 {
-  color: #1f3a5f;
-  margin-bottom: 5px;
+  font-size: 2.2em;
+  margin-bottom: 10px;
 }
 
 header p {
-  color: #555;
+  font-size: 1.1em;
+  margin: 50px 0;
+  color: #e0e0e0;/*softer text on dark background*/
 }
 
 /* =========================
    Navigation
 ========================= */
 nav {
-  background-color: #1f3a5f;
-  border-radius: 6px;
-  margin-bottom: 30px;
+  text-align: center;
+  margin: 20px 0;
 }
 
 nav a {
+  display: inline-block;
+  margin: 0 15px;
+  padding: 8px 15px;
   color: white;
+  background-color: #2bb0a6;/* teal highlight for links*/
+  border-radius: 5px;
   text-decoration: none;
-  margin-right: 15px;
   font-weight: bold;
+  transition: background 0.3s;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  background-color: #1e7f1e;
+  color: white;
 }
 
 /* =========================
@@ -65,16 +80,16 @@ nav a:hover {
 ========================= */
 section {
   background-color: #ffffff;
-  padding: 20px;
+  padding: 25px;
   margin-bottom: 25px;
   border-radius: 8px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-  max-width: 900px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
 }
 
 section h2,
 section h3 {
-  color: #1f3a5f;
+  color: #1f3a5f;/*match header theme*/
+  margin-bottom: 15px;
 }
 
 /* =========================
@@ -83,20 +98,20 @@ section h3 {
 section img {
   max-width: 100%;
   border-radius: 8px;
-  margin: 10px 0;
+  margin: 15px 0;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
 }
 
-/* =========================
-   Portfolio Image Grid
-========================= */
 .image-grid {
   display: flex;
-  gap: 15px;
   flex-wrap: wrap;
+  gap: 15px;
 }
 
 .image-grid img {
   flex: 1 1 30%;
+  max-width: 100%;
+  border-radius: 8px;
 }
 
 /* =========================
@@ -130,9 +145,11 @@ section a:hover {
 footer {
   text-align: center;
   font-size: 0.9em;
-  color: #777;
+  color: #555;
   border-top: 1px solid #ddd;
+  padding: 20px;
   margin-top: 40px;
+  background-color: #f6f7f9;
 }
 
 /* =========================
