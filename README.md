@@ -1,5 +1,8 @@
-# my-portfolio
--This is my first personal portfolio website built using **HTML5** and **CSS3**.
+# Personal Portfolio Website
+
+## Description
+This is my first personal portfolio website built using HTML5 and CSS3.  
+It showcases my basic web development skills and project structure.
 
 ## Features
 - Multi-page static website
@@ -13,6 +16,13 @@
 - About
 - Portfolio
 - Contact
+
+## Technologies Used
+- HTML5
+- CSS3
+
+## Live Demo
+https://hamja-dev.github.io/my-portfolio/
 
 ## Purpose
 This project is part of my web development learning roadmap.  
