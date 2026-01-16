@@ -28,9 +28,13 @@ https://hamja-dev.github.io/my-portfolio/
 This project is part of my web development learning roadmap.  
 It serves as the foundation before moving into WordPress and AWS.
 
+
 # Personal Portfolio (WordPress)
 
 This is my first WordPress-based portfolio website.
+
+## Screenshot
+![Portfolio Screenshot](assets/Screenshot.jpeg)
 
 ## What I practiced
 - WordPress block editor
