@@ -28,5 +28,25 @@ https://hamja-dev.github.io/my-portfolio/
 This project is part of my web development learning roadmap.  
 It serves as the foundation before moving into WordPress and AWS.
 
+# Personal Portfolio (WordPress)
+
+This is my first WordPress-based portfolio website.
+
+## What I practiced
+- WordPress block editor
+- Templates and patterns
+- Reusable synced patterns
+- Clean page structure
+- Navigation and layout consistency
+
+## Pages
+- Home
+- About
+- Contact
+- Portfolio
+
+## Goal
+Build a clean, maintainable foundation before adding plugins or advanced features.
+
 ## Author
 Amir Hamja
