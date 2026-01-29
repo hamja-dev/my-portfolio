@@ -34,7 +34,7 @@ It serves as the foundation before moving into WordPress and AWS.
 This is my first WordPress-based portfolio website.
 
 ## Screenshot
-![Portfolio Screenshot](assets/Screenshot_23-1-2026_04831_wp-portfolio.local.jpeg)
+![Portfolio Screenshot](assets/Screenshot_30-1-2026_22918_wp-portfolio.local.jpeg)
 
 ## What I Practiced
 
