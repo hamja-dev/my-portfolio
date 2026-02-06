@@ -34,18 +34,19 @@ It serves as the foundation before moving into WordPress and AWS.
 This is my first WordPress-based portfolio website.
 
 ## Screenshot
-![Portfolio Screenshot](assets/Screenshot_30-1-2026_22918_wp-portfolio.local.jpeg)
+![Portfolio Screenshot](assets/Screenshot_7-2-2026_1347_wp-portfolio.local.png)
 
 ## What I Practiced
-
-- Working with the WordPress Block Editor (Gutenberg)
-- Creating and managing templates and block patterns
-- Building reusable and synced patterns
-- Structuring pages for clarity and maintainability
-- Ensuring consistent navigation and layout across the site
-- Using HTML anchor links and buttons for internal navigation and calls to action
-- Implementing `mailto:` links for email contact
-- Adding social media icons with external links
+- Working with the **WordPress Block Editor (Gutenberg)**
+- Creating and managing **templates and block patterns**
+- Building **reusable and synced patterns**
+- Structuring pages for **clarity and maintainability**
+- Ensuring **consistent navigation and layout** across the site
+- Using **HTML anchor links and buttons** for internal navigation and calls to action
+- Implementing **mailto:** links for email contact
+- Adding **social media icons** with external links
+- Controlling **block spacing, vertical rhythm, and responsive layouts** with CSS
+- Refining **component-level styles** for buttons and card-like blocks
 
 ## Pages
 - Home
